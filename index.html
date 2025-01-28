@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tailwain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"], // Custom font family
+                    },
+                },
+            },
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aec48a864f.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <section>
+
+<body class="font-manrope max-w-7xl mx-auto">
+    <section class="flex gap-x-8 ">
         <div>
+            <h1 class="font-extrabold  text-7xl	leading-[90px]">It's good <br>
+                tea time at The <br>Tea House</h1>
+            <p class="text-gray-500 pt-9">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+            <button class="rounded-lg p-5 bg-gradient-to-r from-orange-500 to-red-600 text-white mt-5">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
             
+        </div>
+        <div class="relative">
+            <img src="images/banner.png" alt="">
+            <div class=" bg-white flex justify-between shadow-md w-52 p-3 absolute bottom-8 left-32 rounded-lg">
+                <div>
+                    <i class="fa-solid fa-star text-[#FFC850] text-3xl "></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-3xl">5.00</h1>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-4/5 mx-auto">
+        <div class="p-12">
+            <h1 class="font-extrabold text-5xl p-5 text-center ">Our Featured Products</h1>
+            <p class="text-gray-500 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br>
+                 by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+        <div class=" grid grid-cols-4 grid-rows-4 text-center gap-5">
+        <div class=" bg-gradient-to-b from-gray-100 to-gray-tarnsparent flex flex-col items-center rounded-md p-5">
+            <img src="images/tea-1.png" alt="">
+            <h1 class="font-extrabold text-text-2xl my-5">Milk Tea</h1>
+            <p class="text-gray-500">Creamer could be replaced <br> by fresh milk</p>
+        </div>
+        <div class=" bg-gradient-to-b from-gray-100 to-gray-tarnsparent flex flex-col items-center rounded-md p-5">
+            <img src="images/tea-2.png" alt="">
+            <h1 class="font-extrabold text-text-2xl my-5">Black Tea</h1>
+            <p class="text-gray-500">Creamer could be replaced <br> by fresh milk</p>
+        </div>
+        <div class=" bg-gradient-to-b from-gray-100 to-gray-tarnsparent flex flex-col items-center rounded-md p-5">
+            <img src="images/tea-3.png" alt="">
+            <h1 class="font-extrabold text-text-2xl my-5">Lemon Tea</h1>
+            <p class="text-gray-500">Creamer could be replaced <br> by fresh milk</p>
+        </div>
+        <div class=" bg-gradient-to-b from-gray-100 to-gray-tarnsparent flex flex-col items-center rounded-md p-5">
+            <img src="images/tea-4.png" alt="">
+            <h1 class="font-extrabold text-text-2xl my-5">Green Tea</h1>
+            <p class="text-gray-500">Creamer could be replaced <br> by fresh milk</p>
+        </div>
         </div>
     </section>
 </body>
+
 </html>
